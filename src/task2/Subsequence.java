@@ -3,11 +3,8 @@ package task2;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by andzh on 27.09.2016.
- */
 public class Subsequence {
-    public static Boolean arrayCheck(List Xi, List Yi) {
+    private static Boolean arrayCheck(List Xi, List Yi) {
         List<Object> list = new ArrayList<Object>();
 
         int tmp = 0;

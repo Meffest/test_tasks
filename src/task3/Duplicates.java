@@ -3,11 +3,8 @@ package task3;
 import java.io.*;
 import java.util.*;
 
-/**
- * Created by andzh on 27.09.2016.
- */
 public class Duplicates {
-    public static boolean duplicatesWriter(File file1, File file2){
+    private static boolean duplicatesWriter(File file1, File file2){
         String line;
         Map<String, Integer> duplicatesString = new TreeMap<>();
 
@@ -23,6 +20,8 @@ public class Duplicates {
                 writer.write(entry.getKey() + " " + "[" + entry.getValue() + "]" + "\n");
                 writer.flush();
             }
+            reader.close();
+            writer.close();
         } catch (IOException e) {
             return false;
         }
